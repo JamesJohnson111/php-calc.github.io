@@ -1,0 +1,105 @@
+html {
+    font-size: 62.5%; /*8.8px = 1rem*/
+}
+@media(max-width:998px) {
+    html {
+        font-size: 55%; /*8.8px = 1rem*/
+    }
+}
+@media(max-width:768px) {
+    html {
+        font-size: 40%; /*7.2px = 1rem*/
+    }
+}
+@media(max-width:600px) {
+    html {
+        font-size: 30%;
+    }
+    .container .row .col {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .container .row .col .cal-name {
+        margin-top: 5vh;
+        border-left: .5rem #ffffff solid;
+    }
+    .container .row .col .form-control:first-child {
+        margin-top: 3vh;
+    }
+    .form-control {
+        border: #3AB54B .3rem solid;
+    }
+}
+body {
+    font-family: JosefinSans;
+}
+.back {
+    background-image: url('../images/img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+}
+.cal {
+    width: 65%;
+    height: 75vh;
+    background-color: #005440;
+    margin-left: 17.5%;
+    border-radius: 1rem;
+    color: #ffffff;
+    padding: 1rem;
+}
+.cal-name {
+    margin-top: 23vh;
+    padding: 1rem 0;
+    border-left: .4rem solid #fff;
+    font-size: 5rem;
+    font-weight: bolder;
+    animation: bounces 3s ease infinite forwards alternate;
+}
+@keyframes bounces {
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.form-control {
+    width: 100%;
+    height: 5rem;
+    width: 80%;
+    font-size: 1.5rem;
+    border-radius: 0;
+    font-family: Raleway;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1.5rem 0;
+    margin-left: 10%;
+    border: #3AB54B .5rem solid;
+}
+.form-control:first-child {
+    margin-top: 15vh;
+    width: 100%;
+    margin-left: 0;
+}
+.operations {
+    width: 60%;
+    margin-left: 20%;
+}
+.btn {
+    border-radius: 0;
+    background-color: #3AB54B;
+    color: #ffffff;
+    padding: .7rem 2rem;
+    font-size: 1.5rem;
+    font-family: Raleway;
+    font-weight: bolder;
+    transition: .5s;
+}
+.btn:hover {
+    transform: translateY(.3rem);
+}
+select option {
+    background-color: #005440;
+    color: #ffffff;
+    padding: 2rem;
+}
